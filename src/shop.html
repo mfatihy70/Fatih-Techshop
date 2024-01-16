@@ -1,136 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lobster&display=swap">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    
-    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="sessions.js"></script>
+    <link rel="stylesheet" href="styles.css">
     <title>Webshop</title>
 </head>
+
 <body>
-      <nav class="navbar navbar-expand-sm navbar-light bg-light rounded">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample10" aria-controls="navbarsExample10" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+    <!-- TODO: Add Burger Menu functionality -->
+    <nav class="navbar navbar-expand-sm navbar-light bg-light rounded">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample10"
+            aria-controls="navbarsExample10" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse justify-content-sm-center" id="navbarsExample10">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="main.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="shop.html">Shop</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Impressum</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Warenkorb</a>
-              </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                <img id="cartIcon" width="25px" height="25px" src="cart.png" alt="Warenkorb" ondrop="drop(event)" ondragover="allowDrop(event)">
-                <span id="badge" class="position-relative top-0 start-0 translate-middle badge rounded-pill bg-danger"></span>
-              </a>
-            </li>
-          </ul>
-          <form class="form-inline my-2 my-md-0">
-            <input class="form-control" type="text" placeholder="Search">
-          </form>
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="main.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="shop.html">Shop</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Impressum</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Warenkorb</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <img id="cartIcon" width="25px" height="25px" src="../data/cart.png" alt="Warenkorb"
+                            ondrop="drop(event)" ondragover="allowDrop(event)">
+                        <!-- TODO: Adding elements by Drag and Drop -->
+                        <span id="badge" class="position-relative top-0 start-0 translate-middle badge rounded-pill bg-danger"></span>
+                    </a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-md-0">
+                <input class="form-control" type="text" placeholder="Search">
+            </form>
         </div>
-      </nav>
-      <br>
+    </nav>
+    <br>
     <h1>Willkommen zu Fatih's Techshop</h1>
 
     <br><br>
     <h3 class="sale">Bis 25.10 gratis Versand!</h3>
-  
+
     <br><br>
-      <div class="container-md">
-
+    <div class="container-md">
         <div id="Laptop" class="row" type="Laptop" name="Lenovo Thinkpad X1 Carbon" price="2999">
-          <div class="col-lg-4 col-sm-12 text-center">
-            <img src="laptop.png" class="img-fluid" alt="Responsive image" draggable="true">
-          </div>
-          <div class="col-lg-4 col-sm-12 text-center">
-            <h5>Lenovo Thinkpad X1 Carbon</h5>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">Intel Core i9 13th Gen Prozessor</li>
-              <li class="list-group-item">32GB 6400MHz LPDDR5X Arbeitsspeicher</li>
-              <li class="list-group-item">2TB Gen 4 NVMe SSD</li>
-              <li class="list-group-item">4K 120Hz OLED Bildschirm</li>
-            </ul>
-          </div>
-
-          <div class="col-lg-4 col-sm-12">
-            <div class="text-center">
-              <h4><em>2.999€</em></h4>
-              <h6 class="text-success">Gratis Versand!</h6>
-              <button id="laptopwk" type="button" class="btn btn-primary text-center">In den Warenkorb</button>
+            <div class="col-lg-4 col-sm-12 text-center">
+                <img src="../data/laptop.png" class="img-fluid" alt="Responsive image" draggable="true">
             </div>
-          </div>
+            <div class="col-lg-4 col-sm-12 text-center">
+                <h5>Lenovo Thinkpad X1 Carbon</h5>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Intel Core i9 13th Gen Prozessor</li>
+                    <li class="list-group-item">32GB 6400MHz LPDDR5X Arbeitsspeicher</li>
+                    <li class="list-group-item">2TB Gen 4 NVMe SSD</li>
+                    <li class="list-group-item">4K 120Hz OLED Bildschirm</li>
+                </ul>
+            </div>
+            <div class="col-lg-4 col-sm-12">
+                <div class="text-center">
+                    <h4><em>2.999€</em></h4>
+                    <h6 class="text-success">Gratis Versand!</h6>
+                    <button id="laptopwk" type="button" class="btn btn-primary text-center">In den Warenkorb</button>
+                </div>
+            </div>
         </div>
-        
+
         <br><abr>
 
         <div id="Handy" class="row" type="handy" name="Samsung Galaxy S23+" price="1999">
-          <!-- IMAGE -->
-          <div class="col-lg-4 col-sm-12 text-center">
-            <img src="handy.png" class="img-fluid" alt="Responsive image">
-          </div>
-          <!-- TEXT -->
-          <div class="col-lg-4 col-sm-12 text-center">
-            <h5>Samsung Galaxy S23+</h5>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">Qualcomm Snapdragon 8 Gen 2 für Galaxy Prozessor</li>
-              <li class="list-group-item">Dynamic AMOLED HDR10+ 120Hz FHD+ Bildschirm</li>
-              <li class="list-group-item">8GB/256GB Speicher</li>
-              <li class="list-group-item">50MP/12MP/10MP Triple Kamera Set</li>
-            </ul>
-          </div>
-          <!-- CART -->
-          <div class="col-lg-4 col-sm-12 text-center">
-            <div class="text-center">
-              <h4><em>1.999€</em></h4>
-              <h6 class="text-success">Gratis Versand!</h6>
-              <button id="handywk" type="button" class="btn btn-primary text-center">In den Warenkorb</button>
+            <div class="col-lg-4 col-sm-12 text-center">
+                <img src="../data/handy.png" class="img-fluid" alt="Responsive image">
             </div>
-          </div>
-
+            <div class="col-lg-4 col-sm-12 text-center">
+                <h5>Samsung Galaxy S23+</h5>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Qualcomm Snapdragon 8 Gen 2 für Galaxy Prozessor</li>
+                    <li class="list-group-item">Dynamic AMOLED HDR10+ 120Hz FHD+ Bildschirm</li>
+                    <li class="list-group-item">8GB/256GB Speicher</li>
+                    <li class="list-group-item">50MP/12MP/10MP Triple Kamera Set</li>
+                </ul>
+            </div>
+            <div class="col-lg-4 col-sm-12 text-center">
+                <div class="text-center">
+                    <h4><em>1.999€</em></h4>
+                    <h6 class="text-success">Gratis Versand!</h6>
+                    <button id="handywk" type="button" class="btn btn-primary text-center">In den Warenkorb</button>
+                </div>
+            </div>
         </div>
 
         <br><br>
 
         <div id="PC" class="row" type="pc" name="AMD Gaming PC" price="3999">
-          <div class="col-lg-4 col-sm-12 text-center">
-            <img src="pc.png" class="img-fluid" alt="Responsive image">
-          </div>
-          <div class="col-lg-4 col-sm-12 text-center">
-            <h5>AMD Gaming PC</h5>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">Ryzen 9 7950X3D Prozessor</li>
-              <li class="list-group-item">AMD Radeon RX 7900XTX Grafikkarte</li>
-              <li class="list-group-item">64 DDR5 7200MHz Arbeitsspeicher</li>
-              <li class="list-group-item">4TB Gen 4 NVMe SSD</li>
-            </ul>
-          </div>
-          <div class="col-lg-4 col-sm-12 text-center">
-            <div class="text-center">
-              <h4><em>4.999€</em></h4>
-              <h6 class="text-success">Gratis Versand!</h6>
-              <button id="pcwk" type="button" class="btn btn-primary text-center">In den Warenkorb</button>
+            <div class="col-lg-4 col-sm-12 text-center">
+                <img src="../data/pc.png" class="img-fluid" alt="Responsive image">
             </div>
-          </div>
+            <div class="col-lg-4 col-sm-12 text-center">
+                <h5>AMD Gaming PC</h5>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Ryzen 9 7950X3D Prozessor</li>
+                    <li class="list-group-item">AMD Radeon RX 7900XTX Grafikkarte</li>
+                    <li class="list-group-item">64 DDR5 7200MHz Arbeitsspeicher</li>
+                    <li class="list-group-item">4TB Gen 4 NVMe SSD</li>
+                </ul>
+            </div>
+            <div class="col-lg-4 col-sm-12 text-center">
+                <div class="text-center">
+                    <h4><em>4.999€</em></h4>
+                    <h6 class="text-success">Gratis Versand!</h6>
+                    <button id="pcwk" type="button" class="btn btn-primary text-center">In den Warenkorb</button>
+                </div>
+            </div>
         </div>
 
         <br><br>
-      
-      </div>
-      
-      <br><br><br><br>
+
+    </div>
+
+    <br><br><br><br>
 </body>
+
 </html>

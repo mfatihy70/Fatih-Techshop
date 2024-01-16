@@ -1,99 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lobster&display=swap">
-    <!-- <script src="sessions.js"></script> -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css">
     <title>Main Page</title>
 </head>
-<body>
 
-      <nav class="navbar navbar-expand-sm navbar-light bg-light rounded">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample10" aria-controls="navbarsExample10" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+<body>
+    <!-- TODO: Add Burger Menu functionality -->
+    <nav class="navbar navbar-expand-sm navbar-light bg-light rounded">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample10"
+            aria-controls="navbarsExample10" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse justify-content-sm-center" id="navbarsExample10">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="main.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="shop.html">Shop</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Impressum</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Warenkorb</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                <img width="25px" height="25px" src="../data/cart.png" alt="Warenkorb">
-                <span id="badge" class="position-relative top-0 start-0 translate-middle badge rounded-pill bg-dang0er"></span>
-              </a>
-            </li>
-          </ul>
-          <form class="form-inline my-2 my-md-0">
-            <input class="form-control" type="text" placeholder="Search">
-          </form>
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="main.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="shop.html">Shop</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Impressum</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Warenkorb</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <img id="cartIcon" width="25px" height="25px" src="../data/cart.png" alt="Warenkorb">
+                        <span id="badge" class="position-relative top-0 start-0 translate-middle badge rounded-pill bg-dang0er"></span>
+                    </a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-md-0">
+                <input class="form-control" type="text" placeholder="Search">
+            </form>
         </div>
-      </nav>
-      <br>
+    </nav>
+    <br>
 
     <h1 class:>Willkommen zu Fatih's Techshop</h1>
     <br><br>
     <h3 class="sale">Bis 25.10 gratis Versand!</h3>
     <br><br>
     <a id="products" href="shop.html">
-      <div class="container-md text-center">
-        <div class="row">
-          <div class="col">
-            <h4>Laptops</h4>
-          </div>
-          <div class="col">
-            <h4>Handys</h4>
-          </div>
-          <div class="col">
-            <h4>PCs</h4>
-          </div>
+        <div class="container-md text-center">
+            <div class="row">
+                <div class="col">
+                    <h4>Laptops</h4>
+                </div>
+                <div class="col">
+                    <h4>Handys</h4>
+                </div>
+                <div class="col">
+                    <h4>PCs</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <img src="../data/laptop.png" class="img-fluid" alt="Responsive image">
+                </div>
+                <div class="col">
+                    <img src="../data/handy.png" class="img-fluid" alt="Responsive image">
+                </div>
+                <div class="col">
+                    <img src="../data/pc.png" class="img-fluid" alt="Responsive image">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p>Kompakte und leistungsstarke Laptops</p>
+                </div>
+                <div class="col">
+                    <p>Stabile Handys mit toller Ausstattung</p>
+                </div>
+                <div class="col">
+                    <p>Stärkste Gaming PCs der Gamer-Welt</p>
+                </div>
+            </div>
+
         </div>
-        <div class="row">
-          <div class="col">
-            <img src="../data/laptop.png" class="img-fluid" alt="Responsive image">
-          </div>
-          <div class="col">
-            <img src="../data/handy.png" class="img-fluid" alt="Responsive image">
-          </div>
-          <div class="col">
-            <img src="../data/pc.png" class="img-fluid" alt="Responsive image">
-          </div>
-        </div>
-        <div class="row">
-          <div class="col">
-            <p>Kompakte und leistungsstarke Laptops</p>
-          </div>
-          <div class="col">
-            <p>Stabile Handys mit toller Ausstattung</p>
-          </div>
-          <div class="col">
-            <p>Stärkste Gaming PCs der Gamer-Welt</p>
-          </div>
-        </div>
-        
-      </div>
     </a>
-      <br><br><br><br>
-      <div class="text-center">
+    <br><br><br><br>
+    <div class="text-center">
         <a href="shop.html">
-          <button type="button" class="btn btn-success .text-center">Hier geht es zum Shop</button>
+            <button type="button" class="btn btn-success .text-center">Hier geht es zum Shop</button>
         </a>
-      </div>
-      <br><br><br><br>
+    </div>
+    <br><br><br><br>
 </body>
+
 </html>
